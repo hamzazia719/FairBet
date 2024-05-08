@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FairBet in Tailwind CSS</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <button id="sidebar-toggle" class="flex">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+          <h1 class="lg:ml-4">Dashboard</h1>
+        </button>
+        <div>
+          <marquee>This text will scroll from right to left</marquee>
+        </div>
+        <div class="text-xl font-semibold">B: 0 | L: 0 | unidemo04</div>
+      </div>
+    </nav>
+    <aside
+      id="sidebar"
+      class="bg-gray-800 mt-12 text-white w-2/5 lg:w-1/5 fixed inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out z-10"
+    >
+      <ul class="p-4 grid justify-center gap-4">
+        <li class="flex items-center">
+          <a
+            href="#"
+            class="block py-2 px-4 text-3xl font-medium text-green-600 hover:underline"
+            >BETPRO</a
+          >
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+        <li class="flex justify-center items-center hover:bg-red-600 w-60">
+          <i class="fa-solid fa-futbol"></i>
+          <a href="#" class="block py-2 px-4 text-xl hover:underline">Soocer</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="flex">
+      <div class="m-1 p-2 w-full mt-2 bg-gray-800 text-white">
+        <div class="m-1">
+          <span class="ml-4">Credit: 0</span>
+          <span class="ml-4">Balance: 0</span>
+          <span class="ml-4">Liable: 0</span>
+          <span class="ml-4">Active Bets: 0</span>
+        </div>
+      </div>
+    </main>
+
+    <div class="container mx-auto overflow-hidden">
+      <div class="responsive object-cover">
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?car"
+        />
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?bike"
+        />
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?gym"
+        />
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?sea"
+        />
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?mountain"
+        />
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?nature"
+        />
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?office"
+        />
+        <img
+          class="p-1 w-60 h-60"
+          src="http://source.unsplash.com/random/1024*1024/?game"
+        />
+      </div>
+    </div>
+
+    <div class="flex items-center m-1">
+      <i class="fa-solid fa-horse"></i>
+      <p class="text-base font-bold ml-2">Horse Race</p>
+    </div>
+    <div class="container mx-auto">
+      <div
+        class="flex justify-center items-center h-14 bg-gray-600 text-white m-1 overflow-hidden responsive"
+      >
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center m-1">
+      <i class="fa-solid fa-horse"></i>
+      <p class="text-base font-bold ml-2">Grey Hound</p>
+    </div>
+    <div class="container mx-auto bg-gray-600">
+      <div
+        class="flex justify-center items-center h-14 text-white m-1 overflow-hidden responsive"
+      >
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+        <div>
+          <h1>2:30 PM</h1>
+          <span> Southwell</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center m-1 text-white gap-1">
+      <div class="w-20 h-20 bg-gray-500">
+        <div class="flex justify-end mr-2">1</div>
+        <div class="flex justify-center">
+          <i class="fa-solid fa-stopwatch"></i>
+        </div>
+        <div class="flex justify-center"><span>Inplay</span></div>
+      </div>
+      <div class="w-20 h-20 bg-gray-500">
+        <div class="flex justify-end mr-2">2</div>
+        <div class="flex justify-center">
+          <i class="fa-solid fa-baseball-bat-ball"></i>
+        </div>
+        <div class="flex justify-center"><span>Cricket</span></div>
+      </div>
+      <div class="w-20 h-20 bg-gray-500">
+        <div class="flex justify-end mr-2">3</div>
+        <div class="flex justify-center">
+          <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+        </div>
+        <div class="flex justify-center"><span>Tennis</span></div>
+      </div>
+      <div class="w-20 h-20 bg-gray-500">
+        <div class="flex justify-end mr-2">4</div>
+        <div class="flex justify-center">
+          <i class="fa-solid fa-futbol"></i>
+        </div>
+        <div class="flex justify-center"><span>Soccer</span></div>
+      </div>
+    </div>
+    <div class="flex justify-around items-center">
+      <div class="flex items-center">
+        <i class="fa-solid fa-baseball-bat-ball"></i>
+        <h1 class="text-xl font-medium">Cricket</h1>
+      </div>
+      <div><h1 class="text-xl font-medium">Matched</h1></div>
+      <div class="text-xl font-medium">1</div>
+      <div><h1 class="text-xl font-medium">X</h1></div>
+      <div class="text-xl font-medium">2</div>
+    </div>
+    <div class="flex items-center m-1 bg-white text-black h-14 gap-1">
+      <div class="grid bg-green-500 text-white h-14">
+        <span>InPlay</span>
+        <span>13:15</span>
+      </div>
+      <div class="p-4 font-bold h-14 flex items-center w-96">
+        <p>Australia V West Indies</p>
+      </div>
+      <div class="h-14 flex justify-center items-center w-96 gap-1">
+        <i class="fa-solid fa-tv"></i>
+        <i
+          class="fa-solid fa-stopwatch text-white"
+          style="
+            border: 1px solid blue;
+            background-color: rgb(12, 12, 49);
+            border-radius: 5px;
+          "
+          ><span> BM</span></i
+        >
+        <i
+          class="fa-solid fa-stopwatch text-white"
+          style="
+            border: 1px solid blue;
+            background-color: rgb(12, 12, 49);
+            border-radius: 5px;
+          "
+        >
+          F</i
+        >
+        <span>332,193,696</span>
+      </div>
+      <div class="grid hidden justify-center bg-blue-400 p-1">
+        <span class="font-bold">1.84</span>
+        <span>109.7k</span>
+      </div>
+      <div
+        class="lg:grid hidden lg:justify-center lg:bg-red-400 lg:w-20 lg:p-1"
+      >
+        <span class="lg:font-bold">1.84</span>
+        <span>109.7k</span>
+      </div>
+      <div class="lg:h-14 hidden lg:bg-green-100 lg:w-20"></div>
+      <div class="lg:h-14 hi' lg:bg-red-100 lg:w-20"></div>
+      <div class="grid hidden justify-center bg-blue-400 p-1">
+        <span class="font-bold">1.84</span>
+        <span>109.7k</span>
+      </div>
+      <div
+        class="lg:grid lg:justify-center lg:bg-red-400 lg:w-20 lg:p-1 hidden"
+      >
+        <span class="lg:font-bold">1.84</span>
+        <span>109.7k</span>
+      </div>
+      <div
+        class="text-black hidden bg-white h-14 flex justify-center items-center"
+      >
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+    </div>
+    <div class="mt-4 mb-4 flex justify-between">
+      <div class="flex items-center">
+        <i class="fa-solid fa-futbol"></i>
+        <span class="ml-2">Football</span>
+      </div>
+      <div
+        class="hidden lg:flex justify-start items-center w-1/5 gap-12 text-lg font-medium"
+      >
+        <span>Matched</span>
+        <span>1</span>
+        <span>x</span>
+        <span>2</span>
+      </div>
+    </div>
+    <div class="mt-4 mb-4 flex justify-between">
+      <div class="flex items-center">
+        <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+        <span class="ml-2">Tennis</span>
+      </div>
+      <div
+        class="hidden lg:flex justify-start items-center w-1/5 gap-12 text-lg font-medium"
+      >
+        <span>Matched</span>
+        <span>1</span>
+        <span>x</span>
+        <span>2</span>
+      </div>
+    </div>
+    
+      <footer class="flex justify-center items-center bg-gray-900 text-white h-16">
+        <h1 class="text-3xl">betFair</h1>
+      </footer>
+
+    <script>
+      const sidebarToggle = document.getElementById("sidebar-toggle");
+      const sidebar = document.getElementById("sidebar");
+
+      sidebarToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("-translate-x-full");
+      });
+
+      $(".responsive").slick({
+        //   dots: true,
+        infinite: true,
+        autoplay: true,
+        nav: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              // dots: true
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
